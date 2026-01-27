@@ -569,7 +569,7 @@ h6 {
 
 .activity-points {
   display: grid;
-  grid-column: repeat(3, 120px) 1fr;
+  grid-template-columns: repeat(3, 120px) 1fr;
   border: 1px solid black;
 }
 
@@ -617,6 +617,58 @@ h6 {
 .lisbon,
 .berlin {
   border-right: 1px solid black;
+}
+
+.contact-info {
+  display: grid;
+  grid-template-columns: 2fr 1fr;
+  grid-template-rows: repeat(3, auto);
+  grid-column: 4;
+  column-gap: 60px;
+  padding-top: 100px;
+  padding-bottom: 100px;
+}
+
+.contact-info-image {
+  width: 100%;
+  height: auto;
+  object-fit: cover;
+}
+
+.Amsterdam-title-coffe {
+  font-family: var(--font-family-base);
+  font-size: 25px;
+  font-weight: 400;
+  text-transform: uppercase;
+}
+
+.contact-info-text {
+  display: flex;
+  flex-direction: column;
+  row-gap: 30px;
+  font-family: var(--font-family-accent);
+  font-size: 18px;
+  font-weight: 400;
+}
+
+.contact-info-main {
+  margin: 0;
+  margin-bottom: 20px;
+}
+
+.contact-us {
+  width: 155px;
+  height: 60px;
+  background-color: var(--collor-dark);
+  text-align: center;
+}
+
+.button-text {
+  font-family: var(--font-family-base);
+  font-size: 17px;
+  font-weight: 400;
+  text-transform: uppercase;
+  color: var(--collor-light);
 }
 
 @media (max-width: 1024px) {
