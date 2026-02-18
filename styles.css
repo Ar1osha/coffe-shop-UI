@@ -849,6 +849,7 @@ h6 {
   flex-direction: column;
   align-items: center;
   background-image: url(./image/background-image.png);
+  border: 1px solid black;
 }
 
 .title-reserve {
@@ -891,6 +892,67 @@ select {
   background-color: var(--collor-dark);
   width: 163px;
   height: 59px;
+}
+
+.title-personal {
+  font-family: var(--font-family-base);
+  font-size: 70px;
+  text-transform: uppercase;
+  color: var(--collor-darkdark);
+  border-bottom: 1px solid black;
+  padding: 0.71em;
+}
+
+.team {
+  display: grid;
+  grid-template-columns: repeat(auto-fit, minmax(150px, 1fr));
+  border-bottom: 1px solid black;
+}
+
+.Uma-lark,
+.tom-Splinder,
+.Jonas-Hanks,
+.laura-Simons,
+.Ed-Moris,
+.Rita-Flams {
+  border: 0.5px solid black;
+  padding: 2.37rem;
+}
+
+.Uma-image,
+.tom-image,
+.Jonas-image,
+.laura-image,
+.Ed-image,
+.Rita-image {
+  width: 100%;
+  transition: 0.3s;
+  cursor: pointer;
+  border-radius: 10px;
+}
+
+.Uma-image:hover,
+.tom-image:hover,
+.Jonas-image:hover,
+.laura-image:hover,
+.Ed-image:hover,
+.Rita-image:hover {
+  transform: translateY(-30px) scale(1.1);
+  box-shadow: 0 30px 40px rgba(0, 0, 0, 0.4);
+  z-index: 10;
+  position: relative;
+}
+
+.Full-name {
+  font-size: 25px;
+  font-family: var(--font-family-base);
+  color: var(--collor-darkdark);
+  text-transform: uppercase;
+}
+
+.work-position {
+  font-family: var(--font-family-accent);
+  font-size: 18px;
 }
 
 /* планшет */
